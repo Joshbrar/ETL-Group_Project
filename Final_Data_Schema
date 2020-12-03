@@ -1,0 +1,36 @@
+Movies_Tbl
+
+ ID
+ Title
+ Year
+ Content_Rating
+ IMDB
+ Rot_Tomatoes_Rating
+ Netflix
+ Hulu
+ Prime_video
+ Disney
+
+ Movies_Shows_Genras_Tbl
+ ID
+ Genras_ID
+
+ 
+Genras_Tbl
+
+Genras_ID
+Genras_Name
+
+
+
+TV_Shows_Tbl
+ID
+Series_Title
+Year
+Content_Rating
+IMDB_Rating
+Rot_Tomatoes_Rating
+Netflix
+Hulu
+Prime_video
+Disney
