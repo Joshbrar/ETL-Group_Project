@@ -18,23 +18,23 @@ Disney char(1)
 );
 
 
-create table Movies_Shows_Genras_Tbl
+create table movies_shows_genras_tbl
 (
- ID int not null,
- Movie_YN char(1) not null ,
- Genras_ID int not null
+  id int not null,
+ movie_yn char(1) not null ,
+ genras_id int not null
 );
 
 
-create table TV_Shows_Tbl (
-ID SERIAL PRIMARY KEY,
-Title varchar(250) not null,
-Released_Year int not null,
-Content_Rating  char(10),
-IMDB_Rating float ,
-Rot_Tomatoes_Rating float,
-Netflix char(1) ,
-Hulu char(1) ,
-Prime_Video char(1) ,
-Disney char(1) 
+create table tv_shows_tbl (
+id int PRIMARY KEY,
+title varchar(250) not null,
+released_year int not null,
+content_rating  char(10),
+imdb_rating float ,
+rot_tomatoes_rating float,
+netflix char(1) ,
+hulu char(1) ,
+prime_video char(1) ,
+disney char(1) 
 );
