@@ -38,3 +38,20 @@ hulu char(1) ,
 prime_video char(1) ,
 disney char(1) 
 );
+
+
+SELECT * FROM movies_shows_genras_tbl msg WHERE movie_yn ='N';
+
+SELECT m.title,m.imdb_rating,m.netflix,m.hulu,m.prime_video,m.disney, g.genras_name
+From movies_tbl m
+LEFT JOIN movies_shows_genras_tbl msg
+ON (m.id= msg.id)
+LEFT JOIN genras_tbl g
+ON (g.genras_id = msg.genras_id) ;
+
+SELECT t.title,t.imdb_rating,t.netflix,t.hulu,t.prime_video,t.disney, g.genras_name
+From tv_shows_tbl t
+LEFT JOIN movies_shows_genras_tbl msg
+ON (t.id= msg.id)
+LEFT JOIN genras_tbl g
+ON (g.genras_id = msg.genras_id) ;
